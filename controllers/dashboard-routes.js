@@ -50,8 +50,7 @@ router.get('/create/', async (req, res) => {
             attributes: [
                 'id',
                 'title',
-                'created_at',
-                'post_content'
+                'post_text'
             ],
             include: [
                 {

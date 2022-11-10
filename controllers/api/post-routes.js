@@ -102,6 +102,7 @@ try {
         return;
     }
     res.json(postData);
+    res.render('create-post', { posts, loggedIn: true });
 } catch(err) {
     console.log(err);
     res.status(500).json(err);
